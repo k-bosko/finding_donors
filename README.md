@@ -64,12 +64,14 @@ This will open the iPython Notebook software and project file in your browser.
 ## Results
 
 To identify the most promising donators based on their income I performed the following steps:
+
 - **Step 1: Preprocessing**
   - plotted histograms of the two highly skewed continuous features
   - applied _logarithmic transformation_ on them
   - normalized numerical features using `MinMaxScaler()`
   - one-hot encoded categorical variables with `pd.get_dummies()`
   - split the data into training (80%) and test sets (20%) with `train_test_split()` function
+  
 - **Step 2: Creating a Training and Predicting Pipeline**
   - created `train_predict()` function that does the following:
     - fits the learner to the sampled training data and records the training time
@@ -80,11 +82,13 @@ To identify the most promising donators based on their income I performed the fo
     - `RandomForestClassifier()`
     - `AdaBoostClassifier()`
     - `GradientBoostingClassifier()`
+    
 - **Step 3: Improving Results **
    - performed a grid search optimization via `GridSearchCV()` for two parameters `n_estimators` and `learning_rate`
    - made predictions using the unoptimized and optimized model
    - compared the before-and-after scores (accuracy and F-score) on the testing data 
-- **Step 4: Extracting Feature Importance
+   
+- **Step 4: Extracting Feature Importance **
    - determined the top5 most predictive features using `feature_importances_` attribute
 
 ## Acknowledgements
