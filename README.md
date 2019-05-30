@@ -83,12 +83,12 @@ To identify the most promising donators based on their income I performed the fo
     - `AdaBoostClassifier()`
     - `GradientBoostingClassifier()`
     
-- **Step 3: Improving Results **
+- **Step 3: Improving Results**
    - performed a grid search optimization via `GridSearchCV()` for two parameters `n_estimators` and `learning_rate`
    - made predictions using the unoptimized and optimized model
    - compared the before-and-after scores (accuracy and F-score) on the testing data 
    
-- **Step 4: Extracting Feature Importance **
+- **Step 4: Extracting Feature Importance**
    - determined the top5 most predictive features using `feature_importances_` attribute
 
 ## Acknowledgements
